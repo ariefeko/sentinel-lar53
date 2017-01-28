@@ -17,6 +17,7 @@ class RegistrationController extends Controller
     {
         // $user = Sentinel::registerAndActivate($request->all());
         $user = Sentinel::register($request->all());
+        $activate = Activation::create($user);
         $role = Sentinel::findRoleBySlug('manager');
         $role->users()->attach($user);
 
