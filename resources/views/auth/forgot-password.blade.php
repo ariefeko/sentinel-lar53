@@ -5,11 +5,11 @@
         <div class="col-md-6 col-md-offset-3">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title"> Login </h3>
+                    <h3 class="panel-title"> Forgot Password </h3>
                 </div>
 
                 <div class="panel-body">
-                    <form action="/login" method="POST">
+                    <form action="/forgot-password" method="POST">
                         {{ csrf_field() }}
 
                         @include('layouts.errors')
@@ -23,17 +23,7 @@
                         </div>
 
                         <div class="form-group">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-
-                                <input type="password" name="password" class="form-control" placeholder="Password" required>
-                            </div>
-                        </div>
-
-                        <a href="/forgot-password">Forgot Password?</a>
-
-                        <div class="form-group">
-                            <input type="submit" value="Login" class="btn btn-success pull-right">
+                            <input type="submit" value="Reset Password" class="btn btn-success pull-right">
                         </div>
 
                     </form>
