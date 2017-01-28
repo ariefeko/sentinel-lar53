@@ -78,6 +78,8 @@
             @endif
 
             <div class="content">
+                @include('layouts.errors')
+
                 <div class="title m-b-md">
                     Laravel
                 </div>

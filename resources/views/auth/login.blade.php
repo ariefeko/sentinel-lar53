@@ -12,6 +12,8 @@
                     <form action="/login" method="POST">
                         {{ csrf_field() }}
 
+                        @include('layouts.errors')
+
                         <div class="form-group">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-envelope"></i></span>

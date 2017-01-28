@@ -1,3 +1,5 @@
+@include('layouts.errors')
+
 Total earnings 99999
 
 <form action="/logout" method="POST" id="logout-form">

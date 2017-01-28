@@ -1,3 +1,5 @@
+@include('layouts.errors')
+
 this is tasks
 
 <form action="/logout" method="POST" id="logout-form">

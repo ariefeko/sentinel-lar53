@@ -10,6 +10,7 @@ Route::group(['middleware' => 'visitors'], function() {
     Route::post('login', 'LoginController@postLogin');
 });
 
+Route::get('logout', 'LoginController@getLogout');
 Route::post('logout', 'LoginController@logout');
 
 Route::get('earnings', 'AdminController@earnings')->middleware('admin');
