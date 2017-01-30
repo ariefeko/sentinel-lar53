@@ -31,4 +31,11 @@ class User extends Authenticatable
     {
         return static::whereEmail($email)->first();
     }
+
+    public function avatar()
+    {
+        $avatar = ($this->avatar) ? asset($this->avatar) : asset('img/default-avatar.png');
+
+        return $avatar;
+    }
 }

@@ -10,6 +10,7 @@
                         </form>
                     </li>
                 @else
+                    <li role="presentation"><a href="/image">Cropper</a></li>
                     <li role="presentation"><a href="/login">Login</a></li>
                     <li role="presentation"><a href="/register">Register</a></li>
                 @endif
