@@ -1,6 +1,6 @@
 @include('layouts.errors')
 
-this is tasks
+this is tasks, with role manager
 
 <form action="/logout" method="POST" id="logout-form">
     {{ csrf_field() }}

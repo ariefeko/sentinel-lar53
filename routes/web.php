@@ -15,12 +15,12 @@ Route::group(['middleware' => 'visitors'], function() {
 
     Route::get('reset/{email}/{resetCode}', 'ForgotPasswordController@resetPassword');
     Route::post('reset/{email}/{resetCode}', 'ForgotPasswordController@postResetPassword');
-
-    Route::get('image', 'CropController@image');
-    Route::post('image', 'CropController@postImage');
-
-    Route::post('crop', 'CropController@postCrop');
 });
+
+Route::get('image', 'CropController@image');
+Route::post('image', 'CropController@postImage');
+
+Route::post('crop', 'CropController@postCrop');
 
 Route::get('logout', 'LoginController@getLogout');
 Route::post('logout', 'LoginController@logout');
